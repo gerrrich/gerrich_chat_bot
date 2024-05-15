@@ -5,6 +5,7 @@ client = Groq(api_key="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"
 bot = telebot.TeleBot("7072266877:AAEzRwuHbELQ_EeiGIku4n9MBdcui_9b3lQ")
 messages = []
 
+
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
     global messages
